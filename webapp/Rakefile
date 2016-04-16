@@ -1,0 +1,20 @@
+require 'rake'
+
+task test: "test:all"
+
+namespace :test do
+	desc 'Run all tests'
+	task :all do
+		system 'rspec'
+	end
+
+	desc 'Run unit tests'
+	task :unit do
+		system 'rspec spec/unit'
+	end
+
+	desc 'Run acceptance tests'
+	task :acceptance do
+		system 'rspec spec/features'
+	end	
+end
