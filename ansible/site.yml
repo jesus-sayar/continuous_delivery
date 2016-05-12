@@ -1,0 +1,10 @@
+---
+- hosts: all
+  roles:
+    - base
+
+- hosts: webapp
+  roles:
+    - nginx
+    - docker
+    - app

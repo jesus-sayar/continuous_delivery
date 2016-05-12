@@ -1,0 +1,11 @@
+---
+root_password: "$6$8ZYjI1V25bwIHeNB$kiTnZ9sv/psM8teup94aQBy716t83L8U3bRRiOvShJNmrJvnaPfV2RDra7msMw.APgoLTky/2gb4OWQip3dlT/"
+
+users:
+  - username: jesus
+    name: Jesús Sayar
+    uid: 10001
+    groups: ["sudo"]
+    password: "$6$8ZYjI1V25bwIHeNB$kiTnZ9sv/psM8teup94aQBy716t83L8U3bRRiOvShJNmrJvnaPfV2RDra7msMw.APgoLTky/2gb4OWQip3dlT/"
+    ssh_key:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPKSMexfDsk4i8G9Z5ZGotk/Sl7LrxsDVQaE002NSN1HpSOSaoAJaREXyVoQgjyxs6jgGPlLpvvLobABGtvgNC9Pp1Sfy/h4f5hsCAALJC5QejyZ1gN4HOrmfNWtNqHNe0f0nsdNtsk1bG9xdTK8UWs3XiN7wrgwTuwRkMwx5zJPLIvL0hNfMtwWduty4h7wCoAnQtRy63myh6jGSPqNlf9bwIgJ91z9naYNDYrM2kx6SizlkB3SvdaWVW8DHJjaiAFUZAZgj8sc7bb7BGo4fEjXOc6NId1ZqEH6OTWGMKW5zjSs5Ie6lEY7rhDJpo4+VuGraiQlSU/Ncy8NelZJJ1 xuxocelestes@gmail.com"

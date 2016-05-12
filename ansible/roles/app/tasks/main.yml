@@ -1,0 +1,9 @@
+---
+- name: deploy simple app application
+  docker:
+    name: simple_app
+    image: jsayar/simple_app
+    state: reloaded
+    pull: always
+    ports:
+      - "127.0.0.1:8080:9292"
