@@ -1,4 +1,8 @@
 ---
+firewall_rules:
+  - name: WWW
+    rule: allow
+
 nginx_sites:
   - server_name: league.internal.codingstones.com
     type: upstream
