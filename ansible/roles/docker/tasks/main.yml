@@ -1,9 +1,4 @@
 ---
-- name: install unzip
-  apt:
-    pkg=unzip
-    state=present
-
 - name: add debian transport https
   apt:
     pkg=apt-transport-https
@@ -27,16 +22,6 @@
   service:
     name=docker
     state=started
-
-- name: install python-setuptools
-  apt:
-    pkg=python-setuptools
-    state=present
-
-- name: install pip
-  easy_install:
-    name=pip
-    state=present
 
 - name: install docker-py
   pip:

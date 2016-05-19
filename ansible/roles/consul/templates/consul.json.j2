@@ -1,0 +1,11 @@
+{
+  "server": {{ "true" if consul_is_server else "false" }},
+	{% if consul_join_at_start is defined and consul_join_at_start %}
+  	"start_join": {{ consul_servers|to_nice_json }},
+	{% endif %}
+  {% if consul_is_server and consul_bootstrap_expect is defined %}
+    "bootstrap_expect": {{ consul_bootstrap_expect }},
+  {% endif %}
+  "data_dir": "{{ consul_data_dir }}",
+  "bind_addr": "{{ hostvars[inventory_hostname]['ansible_eth1']['ipv4']['address'] }}"
+}

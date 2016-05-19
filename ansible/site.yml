@@ -3,8 +3,19 @@
   roles:
     - base
 
+- hosts: consul
+  roles:
+    - nginx
+    - consul
+
+# - hosts: router
+#   roles:
+#     - nginx
+#     - consul    
+
 - hosts: webapp
   roles:
     - nginx
-    - docker
-    - app
+    - consul  
+    # - docker
+    # - app
