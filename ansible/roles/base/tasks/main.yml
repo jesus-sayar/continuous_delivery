@@ -9,18 +9,11 @@
     pkg={{ item }}
     state=present
   with_items:
-    - vim
-    - git-core
-
-- name: install unzip
-  apt:
-    pkg=unzip
-    state=present
-
-- name: install python-setuptools
-  apt:
-    pkg=python-setuptools
-    state=present
+    # - vim
+    # - git-core
+    # - httpie
+    - unzip
+    - python-setuptools
 
 - name: install pip
   easy_install:

@@ -1,0 +1,8 @@
+---
+- hosts: consul
+  tasks:
+    - name: download and install consul-template
+      unarchive:
+        src=https://releases.hashicorp.com/consul-template/0.14.0/consul-template_0.14.0_darwin_amd64.zip
+        dest=/usr/local/bin
+        copy=no

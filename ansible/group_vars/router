@@ -1,4 +1,8 @@
 ---
+firewall_rules:
+  - name: WWW
+    rule: allow
+
 nginx_sites:
   - server_name: league.internal.codingstones.com
     type: upstream
@@ -12,7 +16,4 @@ nginx_sites:
           - proxy_set_header: X-Forwarded-Server $host
           - proxy_set_header: X-Forwarded-For $proxy_add_x_forwarded_for
           - proxy_pass: http://backend
-
-consul_join_at_start: true
-consul_servers: ['192.168.0.129']
 

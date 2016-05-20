@@ -11,11 +11,11 @@
 # - hosts: router
 #   roles:
 #     - nginx
-#     - consul    
+#     - consul
 
 - hosts: webapp
   roles:
     - nginx
     - consul  
-    # - docker
-    # - app
+    - docker
+    - app

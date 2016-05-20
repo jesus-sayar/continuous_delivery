@@ -5,6 +5,11 @@
     dest=/usr/local/bin
     copy=no
 
+- name: install python-consul
+  pip:
+    name=python-consul
+    state=present
+
 - name: create consul group
   group: >
     name={{consul_group}}
@@ -50,4 +55,4 @@
     dest={{ consul_config_file }}
     owner={{consul_user}}
     group={{consul_group}}
-    mode=0755    
+    mode=0755

@@ -8,7 +8,7 @@
     ports:
       - "127.0.0.1:8080:9292"
 
-# - name: register service in consul
-#   consul:
-#     service_name: league
-#     service_port: 80
+- name: register service in consul
+  consul:
+    service_name: simple_app
+    service_port: 80
